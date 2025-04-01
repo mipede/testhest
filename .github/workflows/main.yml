@@ -22,9 +22,9 @@ jobs:
     steps:
       - name: download code
         uses: actions/download-artifact@v4
-          with:
-            name: code
-            path: .
+        with:
+          name: code
+          path: .
       - name: run linting
         run: super-linter/super-linter/slim@v7
         env:
